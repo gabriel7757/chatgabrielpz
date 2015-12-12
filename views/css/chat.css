@@ -1,0 +1,130 @@
+/**
+ * Chat SS Styles
+ *
+ * @author : DiganmeGiovanni | https://twitter.com/DiganmeGiovanni
+ * @Updated at: Aug 16, 2015;
+ */
+ 
+ @import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+
+/* ====================================================== //
+// == HTML Styles
+// =====================================================  */
+body {
+  background: #ECF0F1;
+  font-family: 'Roboto', Helvetica;
+  height: 100%;
+}
+
+
+/* ====================================================== //
+// == Custom classes Styles
+// =====================================================  */
+.height-messages {
+  border-bottom: 3px solid #16A085;
+  height: -webkit-calc(100% - 10% - 45px);
+  height:    -moz-calc(100% - 10% - 45px);
+  height:         calc(100% - 10% - 45px);
+  min-height: -webkit-calc(100% - 10% - 45px);
+  min-height:    -moz-calc(100% - 10% - 45px);
+  min-height:         calc(100% - 10% - 45px);
+  overflow: auto;
+  margin-bottom: 10px;
+}
+
+.height10 {
+  height: 10%;
+  max-height: 10%;
+  min-height: 10%;
+}
+
+.height100 {
+  height: 100%;
+  max-height: 100%;
+  min-height: 100%;
+}
+
+.messages {
+  background: #FFF;
+}
+
+.message {
+  margin-top: 15px;
+}
+
+.message-body {
+  color: #111;
+  margin-top: 5px;
+}
+
+.message-date {
+  font-size: 0.875em;
+}
+
+.message-title {
+  color: #D35400;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.online-user {
+  padding-bottom: 7px;
+  padding-top: 7px;
+  font-size: 0.875em;
+  background-color: #16A085;   
+  border-radius:20%;
+}
+
+.online-users {
+  background: #FFF;
+  border-right: 2px solid #2980B9;
+}
+
+.online-users-aside {
+  padding-left: 20px;
+}
+
+.online-userslist {
+  color: #000000;
+  background-color: #FFF;
+  
+}
+
+.users li
+{
+  color: #00cc22;
+  background-color: #cc2332; 
+  list-style-type:none;
+  width:100%;
+  height:50%;
+  border-bottom: 1px solid #FFCC22;
+  line-height: 50px;
+  padding-left: 5px;
+}
+.users li:hover
+{
+  color: #00cc22;
+  background-color: #1234cc; 
+  cursor:pointer;
+}
+
+ul
+{
+   padding: 0px;
+   color: #0022cc;
+   background-color: #2332cc; 
+   
+}
+
+
+.user-image {
+  border: 2px solid #1ABC9C;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.tab-bar {
+  background: #16A085;
+  color: #FFF;
+}

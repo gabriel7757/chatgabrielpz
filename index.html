@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Jugador Reto</title>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="/socket.io/socket.io.js"></script> 
+<!-- <script src="https://cdn.socket.io/socket.io-1.3.7.js"></script>  -->
+</head>
+<body>
+
+<h1>Mensajes: </h1>
+<br><hr><br>
+<center>
+<textarea id="new-message" cols="40" rows="10" placeholder="introduzca mensaje a enviar"></textarea>
+<ul id="list-messages">    
+
+</ul>
+</center>
+
+ <script>
+ 
+     var socket = io();   // inicializa el socketIO en el lado cliente
+	 //var socket = io.connect('"http://localhost:5000");
+	 
+   /* socket.on('mensaje_reto'), function(msg)
+	{
+         $('#list-messages').append( $('<li>').text(msg) );  
+	});
+	*/	 
+	$('#new-message').keyup(function (evt) 
+	{
+	 
+       if (evt.keyCode === 13) 
+	     {
+		  alert("entra en intro");
+            socket.emit('mensaje_reto', $('#new-message').val());
+            $('#new-message').val('');				 
+         }
+    });	 
+	
+  
+
+</script>
+</body>
+</html>
